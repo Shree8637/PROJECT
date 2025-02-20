@@ -5,6 +5,8 @@ const Services = () => {
   return (
     <>
         <Navbar />
+
+        <h2>Services</h2>
     </>
   )
 }
