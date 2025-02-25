@@ -1,12 +1,25 @@
 import React from 'react'
-import Navbar from './Navbar'
+import '../css/Services.css'
+// import Navbar from './Navbar'
 
 const Services = () => {
   return (
     <>
-        <Navbar />
+        {/* <Navbar /> */}
 
-        <h2>Services</h2>
+        <div className='service-page' id='/services'>
+
+          {/* Profit Prediction */}
+          <div className='service1'>
+            
+          </div>
+
+          {/* Weather prediction */}
+          <div className='service2'>
+
+          </div>
+
+        </div>
     </>
   )
 }

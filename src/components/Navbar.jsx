@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navigate, NavLink} from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 import '../css/Navbar.css'
 
 const Navbar = () => {
@@ -9,20 +9,32 @@ const Navbar = () => {
        <nav className = 'nav'>
 
             <div className = 'logo'>
-                <img src="C:\Users\L6-09\Desktop\Project\old\CPP\agro-vision\public\images\logot.png" alt="site logo" onClick={() => Navigate("/")} />
+                <img src="/images/logot.png" alt="site logo" onClick={() => Navigate("/")} />
             </div>
 
             <div className = 'menu'>
                 <ul className='menu-list'>
                   
                   <li className='menu-item'>
-                    <NavLink to = '/' activeClassName='active'>Home</NavLink>
+                    <a href = '/' activeClassName='active'>Home</a>
                   </li>
 
                   <li className='menu-item'>
-                    <NavLink to = '/services' activeClassName='active'>Services</NavLink>
+                    <a href = '/services' activeClassName='active'>Services</a>
                   </li>
 
+                  <li className='menu-item'>
+                    <a href = '/about' activeClassName='active'>About Us</a>
+                  </li>
+
+                  <li className='menu-item'>
+                    <a href = '/help' activeClassName='active'>Help</a>
+                  </li>
+
+                  <li className='menu-item'>
+                    <a href = '/login' activeClassName='active'>Login</a>
+                  </li>
+                  
                 </ul>
             </div>
 
@@ -32,3 +44,8 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+
